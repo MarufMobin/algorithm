@@ -1,0 +1,26 @@
+Pseudocode of BFS
+==================
+
+Time Complexity -> O( V + E ) 
+Space Complexity -> O( V )
+
+input -> Connected Graph and a source 
+output -> Traverse all nodes and print the traversel order 
+
+BFS( graph, source ):
+
+- Initiate an array called "visited" and an empty queue "q" -> time O( 1 )
+- mark visited[source] = 1 and q.push( source ) -> time O( 1 )
+- while the queue is not empty:
+    Total time Complexity O( V + E )
+
+    -> time O( V )
+    - head = q.front()
+    - q.pop()
+    - print the node "head"
+
+    -> time O( E )
+    - for all adjacent nodes of "head" :
+        - if visited[ adjacent_node ] == 0:
+            - visited[ adjacent_node ] = 1 and q.push( adjacent_node )
+
