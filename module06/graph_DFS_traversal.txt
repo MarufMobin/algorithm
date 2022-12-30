@@ -1,0 +1,8 @@
+// Graph 
+// visited array 
+
+void dfs( int node ){
+    
+    cout << node << endl;
+    visited[node] =  1;
+}
