@@ -1,0 +1,28 @@
+// Binary Tree 
+void dfs( int node ){
+    cout << node << endl;
+
+    // Base Case 
+    if node does not have any child:
+        return 
+    
+    // General Case 
+    dfs( node.left_child )
+    dfs( node.right_child )
+
+}
+
+// All kind of tree DFS Search 
+void dfs( int node ){
+
+    cout << node << endl;
+
+    // Base Case 
+    if node does not have any child :
+        return 
+    
+    // General Case 
+    for all child of node:
+        dfs( child )
+    
+}
