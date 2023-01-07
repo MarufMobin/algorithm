@@ -1,0 +1,16 @@
+Pseudocode of BFS 
+=================
+
+input -> Connected Diracted Graph And two Source 
+output -> Traverse all nodes and print the traversal Order there are two soruce in bfs 
+
+BFS( graph, source1, source2 ):
+    -Initiate an array called "visited" and an empty queue "q"
+    -mark visited[source1] = 1 and q.push( source1 ) 
+    -mark visited[source2] = 1 and q.push( source2 )
+    - while the queue is not empty:
+        - head = q.front()
+        - print the node " head "
+        - for all adjacent_node of "head" :
+            -if visited[ adjacent_node ] == 0:
+                - visited[ adjacent_node ] = 1 and q.push( adjacent_node )
