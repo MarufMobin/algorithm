@@ -1,0 +1,27 @@
+// input -> a weighted graph and a source
+// Output -> a distance of all nodes from source
+
+/*
+==> Relaxing Formula
+
+U -> V ( if U to V  Edge )
+
+if d[u] + c( u, v ) < d[v]:
+    d[v] = d[u] + c( u, v )
+
+*/
+- Create a distance array "d" 
+- initialize all values of "d" to infinity  ( 10^18 )
+- d[src] = 0
+- create a visited array and mark all nodes as unvisited
+
+- for i = 0 to n-1:
+    -- loop over the nodes and pick the "unvisited" node with minimum d[node]
+    -- visited[node] = 1
+    -- for all adj_node of node:
+        - if d[node] + c( node, adj_node ) < d[adj_node] :
+            - d[adj_node] = d[node] + c( node, adj_node )
+
+-> output array "d"
+-> Space Complixity O(n) 
+-> Time Complixity O( n^2 )
